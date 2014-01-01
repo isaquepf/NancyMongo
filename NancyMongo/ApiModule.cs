@@ -10,7 +10,7 @@ namespace NancyMongo
 		private readonly MongoCollection<Message> _Messages;
 
 		public ApiModule(MongoCollection<Message> messages)
-			: base("/api") {
+			: base("/api") { 
 			_Messages = messages;
 
 			Get["/messages"] = GetMessages;
